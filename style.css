@@ -89,10 +89,12 @@ footer{
 }
 .pajari{
     display: inline-block;
+    animation: article-load 200ms ease-in;
 }
 
 .homeIcon{
     display: none;
+    animation: article-load 200ms ease-in;
 }
 /*Hero*/
 .heroImage{
@@ -100,6 +102,10 @@ footer{
     width: 320px;
     filter: drop-shadow(3px 3px 3px #636161);
     cursor: url('assets/cursorHi.png'), auto;
+    border-radius: 50%;
+    border-color: blue;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .hero-grid-container{
@@ -120,7 +126,7 @@ footer{
 
 .hero-grid-content{
     grid-area: content;
-    margin-left: 24px;
+    margin-left: 32px;
     align-self: center;
     font-size: 18px;
 }
@@ -150,6 +156,14 @@ footer{
 
 .projectImage{
     width: 100%;
+    filter: drop-shadow(0px 2px 1px #636161);
+    filter: grayscale(80%) contrast(1);
+}
+
+.projectImage:hover{
+    width: 100%;
+    filter: none;
+    filter: drop-shadow(0px 2px 1px #636161);
 }
 
 /*ABOUT PAGE*/
@@ -171,6 +185,7 @@ footer{
     text-align: center;
     align-items: center;
 }
+
 @media only screen and (max-width: 1040px) and (min-width: 600px){
     section{
         margin-left: 10%;
